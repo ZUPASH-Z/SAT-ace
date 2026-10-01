@@ -1,3 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-alert("Welcome to SAT Ace!");
-});
+function checkAnswer(answer) {
+let result = document.getElementById("result");
+ 
+if (answer === "correct") {
+result.innerHTML = "✅ Correct!";
+} else {
+result.innerHTML = "❌ Wrong!";
+}
+}
